@@ -1,4 +1,4 @@
-<section id="projects" class="py-20 sm:py-28 px-4 sm:px-6 bg-[#e5dfd0]">
+<section id="projects" class="py-20 sm:py-28 px-4 sm:px-6 bg-[#e5dfd0] mix-blend-multiply">
     <div class="max-w-6xl mx-auto">
 
         @if(($block['heading'] ?? false) || ($block['subheading'] ?? false))

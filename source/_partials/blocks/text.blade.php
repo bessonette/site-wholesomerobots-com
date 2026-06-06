@@ -1,4 +1,4 @@
-<section class="py-16 px-4 sm:px-6 bg-[#e5dfd0]">
+<section class="py-16 px-4 sm:px-6 bg-[#e5dfd0] mix-blend-multiply">
     <div class="max-w-2xl mx-auto
                 text-stone-700 leading-relaxed font-serif
                 [&>p]:mb-5 [&>p]:text-lg

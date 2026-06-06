@@ -26,7 +26,7 @@
         Skip to content
     </a>
 
-    <header class="sticky top-0 z-40 bg-[#ede8da]/95 backdrop-blur border-b border-[#c8bfa8]/50">
+    <header class="sticky top-0 z-40 bg-[#ede8da]/95 mix-blend-multiply backdrop-blur border-b border-[#c8bfa8]/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-center">
             <a href="{{ $page->baseUrl }}/"
                class="flex items-center gap-3 shrink-0 group">
@@ -44,7 +44,7 @@
         @yield('content')
     </main>
 
-    <footer class="border-t border-[#c8bfa8]/60 bg-[#ddd6c4]">
+    <footer class="border-t border-[#c8bfa8]/60 bg-[#ddd6c4] mix-blend-multiply">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                 <div>

@@ -1,4 +1,4 @@
-<section class="relative overflow-hidden bg-[#e5dfd0]">
+<section class="relative overflow-hidden bg-[#e5dfd0] mix-blend-multiply">
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-36">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 

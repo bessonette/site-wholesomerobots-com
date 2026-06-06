@@ -12,20 +12,25 @@ use TightenCo\Jigsaw\Events\EventBus;
  */
 
 $events->afterBuild(function ($jigsaw) {
-    $mediaSource = $jigsaw->getSourcePath() . '/_assets/media';
-    $mediaDest = $jigsaw->getDestinationPath() . '/assets/media';
+    $assetsSource = $jigsaw->getSourcePath() . '/_assets';
+    $assetsDest = $jigsaw->getDestinationPath() . '/assets';
 
-    if (! is_dir($mediaSource)) {
-        return;
-    }
+    foreach (['media', 'css'] as $dir) {
+        $src = $assetsSource . '/' . $dir;
+        $dest = $assetsDest . '/' . $dir;
 
-    if (! is_dir($mediaDest)) {
-        mkdir($mediaDest, 0755, true);
-    }
+        if (! is_dir($src)) {
+            continue;
+        }
 
-    foreach (new FilesystemIterator($mediaSource) as $file) {
-        if ($file->isFile()) {
-            copy($file->getPathname(), $mediaDest . '/' . $file->getFilename());
+        if (! is_dir($dest)) {
+            mkdir($dest, 0755, true);
+        }
+
+        foreach (new FilesystemIterator($src) as $file) {
+            if ($file->isFile()) {
+                copy($file->getPathname(), $dest . '/' . $file->getFilename());
+            }
         }
     }
 });
