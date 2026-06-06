@@ -1,0 +1,17 @@
+/*
+ * Wholesome Robots — brand styles
+ *
+ * Tailwind is loaded via CDN in _layouts/main.blade.php.
+ * These styles layer on top of Tailwind utilities.
+ */
+
+:root {
+    --wr-teal: #5ba8a0;
+    --wr-amber: #d97706;
+    --wr-cream: #faf7f2;
+}
+
+/* Smooth anchor scroll offset for sticky header */
+[id] {
+    scroll-margin-top: 80px;
+}

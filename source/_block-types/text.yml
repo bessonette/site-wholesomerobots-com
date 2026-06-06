@@ -1,0 +1,5 @@
+name: Text Content
+fields:
+  - key: content
+    label: Content
+    type: richtext

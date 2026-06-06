@@ -1,0 +1,8 @@
+name: Projects Grid
+fields:
+  - key: heading
+    label: Section Heading
+    type: text
+  - key: subheading
+    label: Section Subheading
+    type: textarea
