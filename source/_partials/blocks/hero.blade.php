@@ -1,10 +1,4 @@
-<section class="relative bg-stone-50 overflow-hidden">
-    {{-- Warm gradient backdrops --}}
-    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div class="absolute top-0 right-0 w-2/3 h-full bg-linear-to-bl from-teal-50/80 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 w-1/2 h-2/3 bg-linear-to-tr from-amber-50/60 to-transparent"></div>
-    </div>
-
+<section class="relative overflow-hidden bg-[#e5dfd0]">
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-36">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -16,14 +10,14 @@
                 @endif
 
                 @if($block['subheading'] ?? false)
-                    <p class="text-lg sm:text-xl text-stone-500 mb-10 leading-relaxed">
+                    <p class="text-lg sm:text-xl text-stone-600 mb-10 leading-relaxed font-sans">
                         {{ $block['subheading'] }}
                     </p>
                 @endif
 
                 @if(($block['cta_label'] ?? false) && ($block['cta_url'] ?? false))
                     <a href="{{ str_starts_with($block['cta_url'], 'http') ? $block['cta_url'] : $page->baseUrl . $block['cta_url'] }}"
-                       class="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white font-semibold rounded-lg transition-colors text-sm shadow-sm">
+                       class="inline-flex items-center gap-2 px-7 py-3.5 bg-stone-800 hover:bg-stone-700 text-[#ede8da] font-semibold uppercase tracking-widest transition-colors text-xs shadow-md">
                         {{ $block['cta_label'] }}
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4" aria-hidden="true">
                             <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
@@ -39,5 +33,10 @@
             </div>
 
         </div>
+    </div>
+
+    {{-- Vintage divider --}}
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pb-2">
+        <div class="border-t border-[#c8bfa8]/50"></div>
     </div>
 </section>
