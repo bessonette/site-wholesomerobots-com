@@ -1,5 +1,6 @@
-<section class="py-16 px-4 sm:px-6 bg-[#e5dfd0] mix-blend-multiply">
-    <div class="max-w-2xl mx-auto
+<section class="relative py-16 px-4 sm:px-6">
+    <div class="absolute inset-0 bg-[#e5dfd0] mix-blend-multiply pointer-events-none" aria-hidden="true"></div>
+    <div class="relative z-10 max-w-2xl mx-auto
                 text-stone-700 leading-relaxed font-serif
                 [&>p]:mb-5 [&>p]:text-lg
                 [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-stone-800 [&>h2]:mt-10 [&>h2]:mb-4

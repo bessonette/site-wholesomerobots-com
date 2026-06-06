@@ -44,8 +44,9 @@
         @yield('content')
     </main>
 
-    <footer class="border-t border-[#c8bfa8]/60 bg-[#ddd6c4] mix-blend-multiply">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <footer class="relative border-t border-[#c8bfa8]">
+        <div class="absolute inset-0 bg-[#ddd6c4] mix-blend-multiply pointer-events-none" aria-hidden="true"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                 <div>
                     <div class="flex items-center gap-2.5 mb-2">
@@ -61,7 +62,7 @@
                     <span class="text-xs text-stone-500 italic">A subsidiary of</span>
                     <img src="{{ $page->baseUrl }}/assets/media/wr-logos-iteration7.png"
                          alt="iteration7"
-                         class="h-7 w-auto mix-blend-multiply opacity-70 hover:opacity-100 transition-opacity">
+                         class="h-7 w-auto mix-blend-multiply hover:opacity-80 transition-opacity">
                 </div>
             </div>
         </div>
