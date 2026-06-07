@@ -26,7 +26,9 @@
         Skip to content
     </a>
 
-    <header class="sticky top-0 z-40 bg-[#ede8da]/95 mix-blend-multiply backdrop-blur border-b border-[#c8bfa8]/50">
+    <div class="absolute h-16 w-full bg-[#948265]"></div>
+
+    <header class="sticky top-0 z-40 bg-[#ddd6c4]/40 backdrop-blur-md border-b border-[#c8bfa8]/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-center">
             <a href="{{ $page->baseUrl }}/"
                class="flex items-center gap-3 shrink-0 group">
