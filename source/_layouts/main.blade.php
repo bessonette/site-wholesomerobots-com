@@ -30,8 +30,8 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-center">
             <a href="{{ $page->baseUrl }}/"
                class="flex items-center gap-3 shrink-0 group">
-               <span class="font-semibold text-stone-800 tracking-widest uppercase text-sm">Wholesome</span>
-                <img src="{{ $page->baseUrl }}/assets/media/wr-logos-robot.png"
+                <span class="font-semibold text-stone-800 tracking-widest uppercase text-sm">Wholesome</span>
+                <img src="{{ $page->baseUrl }}/assets/media/wr-logos-robot-bulb.png"
                      alt=""
                      class="h-9 w-9 transition-transform duration-200 group-hover:scale-110"
                      aria-hidden="true">
@@ -44,16 +44,17 @@
         @yield('content')
     </main>
 
-    <footer class="relative border-t border-[#c8bfa8]">
+    <footer class="relative border-t border-[#948265]/70">
         <div class="absolute inset-0 bg-[#ddd6c4] mix-blend-multiply pointer-events-none" aria-hidden="true"></div>
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                 <div>
                     <div class="flex items-center gap-2.5 mb-2">
-                        <img src="{{ $page->baseUrl }}/assets/media/wr-logos-robot.png"
+                        <span class="font-semibold text-stone-700 text-sm tracking-widest uppercase">Wholesome</span>
+                        <img src="{{ $page->baseUrl }}/assets/media/wr-logos-robot-bulb.png"
                              alt="Wholesome Robots"
                              class="h-6 w-6">
-                        <span class="font-semibold text-stone-700 text-sm tracking-widest uppercase">Wholesome Robots</span>
+                        <span class="font-semibold text-stone-700 text-sm tracking-widest uppercase">Robots</span>
                     </div>
                     <p class="text-xs text-stone-500">&copy; {{ date('Y') }} Wholesome Robots. All rights reserved.</p>
                 </div>
