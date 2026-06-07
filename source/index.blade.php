@@ -12,8 +12,8 @@ sections:
     cta_label: "Our Projects"
     cta_url: "#projects"
   - type: text
-    content: "<p>We believe great software should feel effortless. It should stay out of your way, respect your time, and quietly do its job without introducing unnecessary complexity or risk. That's the standard we hold ourselves to at Wholesome Robots — and it shapes everything we build.</p><p>Wholesome Robots is a subsidiary of <a href=\"https://iteration7.com\">iteration7</a>.</p>"
+    content: "<p>We believe great software should feel effortless. It should stay out of your way, respect your time, and quietly do its job without introducing unnecessary complexity or risk. That's the standard we hold ourselves to at Wholesome Robots — and it shapes everything we build.</p><p>Wholesome Robots is a subsidiary of <a href=\"https://iteration7.com\" target=\"_blank\">iteration7</a>.</p>"
   - type: projects
     heading: "Our Projects"
-    subheading: "Software crafted with purpose"
+    subheading: "Software crafted with purpose. Links coming soon."
 ---

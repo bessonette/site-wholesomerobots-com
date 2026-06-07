@@ -63,9 +63,12 @@
 
                 <div class="flex items-center gap-2.5">
                     <span class="text-xs text-stone-500 italic">A subsidiary of</span>
-                    <img src="{{ $page->baseUrl }}/assets/media/wr-logos-iteration7.png"
+                    <a href="https://iteration7.com"
+                       class="text-xs font-semibold text-stone-500 uppercase tracking-widest hover:text-stone-700 transition-colors" target="_blank"> 
+                        <img src="{{ $page->baseUrl }}/assets/media/wr-logos-iteration7.png"
                          alt="iteration7"
                          class="h-7 w-auto mix-blend-multiply hover:opacity-80 transition-opacity">
+                    </a>
                 </div>
             </div>
         </div>
